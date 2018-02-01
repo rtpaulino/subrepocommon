@@ -9,6 +9,13 @@ var stringClean = function (s) {
     return ('' + s).toLowerCase().replace(/\s+/g, ' ');
 };
 
+var uc = function (s) {
+    if (isEmpty(s)) {
+        return s;
+    }
+    return ('' + s).toUpperCase();
+};
+
 var lc = function (s) {
     if (isEmpty(s)) {
         return s;
@@ -27,5 +34,6 @@ module.exports = {
     isEmpty,
     stringClean,
     spacesToUnderscore,
-    uc
+    uc,
+    lc
 };
