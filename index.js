@@ -9,15 +9,23 @@ var stringClean = function (s) {
     return ('' + s).toLowerCase().replace(/\s+/g, ' ');
 };
 
+var uc = function (s) {
+    if (isEmpty(s)) {
+        return s;
+    }
+    return ('' + s).toUpperCase();
+};
+
 var spacesToUnderscore = function (s) {
     if (isEmpty(s)) {
         return s;
     }
     return ('' + s).replaceAll(/\s/g, '_');
-}
+};
 
 module.exports = {
     isEmpty,
     stringClean,
-    spacesToUnderscore
+    spacesToUnderscore,
+    uc
 };
