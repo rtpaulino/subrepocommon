@@ -24,6 +24,7 @@ var lc = function (s) {
 };
 
 // algum comentário diferente
+// dois comentários
 
 var spacesToUnderscore = function (s) {
     if (isEmpty(s)) {
